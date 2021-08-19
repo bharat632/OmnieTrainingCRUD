@@ -1,0 +1,29 @@
+﻿@model EPM.Core.UserManagement.EmployeeRepository;
+
+
+
+<form asp-action="CreateEmployee" asp-controller="Employee">
+
+    <div class="form-group">
+        <label asp-for="EmpName" for="exampleInputEmployeeName">Employee Name</label>
+        <input asp-for="EmpName" type="text" class="form-control" placeholder="Enter Employee Name">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EmpCode" for="exampleInputEmpCode">Employee Code</label>
+        <input asp-for="EmpCode" type="text" class="form-control" placeholder="Enter Employee Code">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" for="exampleInputEmail">Email address</label>
+        <input asp-for="Email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Phone" for="exampleInputPhone">Mobile</label>
+        <input asp-for="Phone" type="number" class="form-control" placeholder="Enter Mobile">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
